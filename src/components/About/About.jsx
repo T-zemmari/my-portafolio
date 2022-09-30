@@ -8,9 +8,30 @@ const About = () => {
     AOS.init({ duration: 1500 });
   }, []);
   return (
-    <div className="about-container" id="about">
-      <div className="contenedor-sobre-mi">
-        <div className="about-desc" data-aos="fade-left">
+    <>
+    <section id="about" className="about">
+    <div className="container">
+      <div className="row">
+       
+        <div className="col-lg-8 pt-4 pt-lg-0 content"data-aos="fade-right" >
+          <h3>UI/UX  &amp; Desarrollador web.</h3>
+          
+          <div className="row">
+            <div className="col-lg-6">
+              <ul>
+                <li><i className="bi bi-chevron-right"></i> <strong>Teléfono:</strong> <span>+34 669217903</span></li>
+                <li><i className="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Valencia </span></li>
+                <li><i className="bi bi-chevron-right"></i> <strong>País:</strong> <span>España</span></li>
+              </ul>
+            </div>
+            <div className="col-lg-6">
+              <ul>
+                <li><i className="bi bi-chevron-right"></i> <strong>Master:</strong> <span>Full stack developer</span></li>
+                <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>tarek.zemmari@gmail.com</span></li>
+                <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
+              </ul>
+            </div>
+          </div>
           <em>
             <span>
               Mi nombre es <strong>Tarek Zemmari</strong> , soy{" "}
@@ -32,11 +53,15 @@ const About = () => {
          
           </em>
         </div>
-        <div className="about-img" data-aos="fade-left">
-          <img className="imagen-sobre-mi" src={MiFoto} alt="MiFoto" />
+
+        <div className="col-lg-4" data-aos="fade-left">
+          <img src={MiFoto} className="img-fluid" alt=""/>
         </div>
       </div>
+
     </div>
+  </section>
+  </>
   );
 };
 
