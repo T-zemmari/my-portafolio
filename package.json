@@ -2,7 +2,7 @@
   "name": "my-portafolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://T-zemmari.github.io/",
+  "homepage": "https://T-zemmari.github.io/my-portafolio",
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@emailjs/browser": "^3.7.0",
@@ -46,7 +46,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -b my-portafolio",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
