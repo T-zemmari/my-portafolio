@@ -5,7 +5,9 @@
     padding: 0;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
     box-sizing: border-box;
 }
 
@@ -160,8 +162,32 @@
     width: 25%
 }
 
+@media(max-width:950px) {
+    .custom-shape-divider-bottom-1664218420 svg {
+        position: relative;
+        display: block;
+        width: calc(108% + 1.3px);
+        height: 90px;
+    }
+    .button {
+        margin-top: 70px !important;
+        text-decoration: none;
+        font-size: 18px;
+        color: #dfdfdf;
+        padding: 20px 50px;
+        border: 3px solid #f7971e;
+        position: relative;
+    }
+}
+
 
 @media (max-width:720px) {
+    .custom-shape-divider-bottom-1664218420 svg {
+        position: relative;
+        display: block;
+        width: calc(108% + 1.3px);
+        height: 160px;
+    }
     .contenedor-saludo-mas-imagen {
         width: 90%;
         display: flex;
@@ -194,13 +220,16 @@
     .titulo-tarek {
         display: none;
     }
-    .navbar-toggler{
+
+    .navbar-toggler {
         margin-right: 10px;
     }
-    #responsive-navbar-nav{
+
+    #responsive-navbar-nav {
         margin-left: 10px;
     }
-    .fixed-top{
+
+    .fixed-top {
         position: inherit !important;
     }
 

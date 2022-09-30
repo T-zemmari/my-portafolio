@@ -112,7 +112,7 @@ export default function RecipeReviewCard() {
         </Button>
       </Card>
 
-      <Card sx={{ maxWidth: 345 }} className="card-version-movil-column">
+      <Card sx={{ maxWidth: 345 }} className="card-version-movil-column card-3" >
         <CardHeader
           avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
